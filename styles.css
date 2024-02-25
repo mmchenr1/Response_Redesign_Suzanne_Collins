@@ -1,0 +1,300 @@
+:root {
+    --sea-green-color: #09814A;
+    --raspberry-rose-color: #B8336A;
+    --ghost-white-color: #F7F7FF;
+    --rick-black-color: #0B2027;
+    --button-default-color: #1A81DC;
+    --hover-button-color: #1361A4;
+    --press-button-color: #0D406E;
+    --disabled-button-color: #B9B9B9;
+}
+
+* {
+}
+
+body {
+    margin:0px;
+    color: var(--rick-black-color);
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+}
+
+.header {
+    background-color: var(--sea-green-color);
+    color: var(--ghost-white-color);
+    text-align: center;
+    width: 100%;
+    height: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    margin: 0px;
+}
+
+h2{
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Play';
+    font-size: 32px;
+    margin: 0px;
+}
+
+p{
+    font-family: 'Manrope';
+    font-size: 18px;
+}
+
+a:hover{
+    color: var(--raspberry-rose-color);
+}
+
+a:active{
+    color: var(--raspberry-rose-color);
+}
+
+.blue-button{
+    background-color: var(--button-default-color);
+    color: var(--ghost-white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope';
+    font-size: 24px;
+    border:0;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.blue-button:hover{
+    background-color: var(--hover-button-color);
+}
+
+.blue-button:active{
+    background-color: var(--press-button-color);
+}
+
+.blue-button-inactive{
+    background-color: var(--disabled-button-color);
+}
+
+/* NAVBAR STYLING */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 86px;
+    background-color: var(--rick-black-color);
+    color: var(--ghost-white-color);
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    position: sticky;
+    top: 0; 
+}
+
+.navbar .nav-link{
+    height:1.5em;
+}
+
+.navbar .nav-link:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--raspberry-rose-color);
+    text-decoration-thickness: 5px;
+    /* TODO: how to get rounded corners (of 4px) on underline??? */
+}
+
+.navbar .nav-link:active{
+    color: var(--raspberry-rose-color);
+}
+/* END NAVBAR STYLING */
+
+
+/* PAGE CONTENTS STYLING */
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 166px;
+    width: 100%;
+}
+
+.page-contents{
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.series-section-header{
+    width:100%;
+    height: 66px;
+    background-color: var(--raspberry-rose-color);
+    color: var(--ghost-white-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.series-section-header h3{
+    padding-left: 59px;
+}
+
+.series-section{
+    margin-bottom: 30px;
+    width: fit-content;
+    
+}
+
+.series-section-body{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: center;
+}
+
+.series-section-body .spacer{
+    flex: 0 0 96px;
+}
+
+.series-carousel{
+    width:auto;
+    min-width: 159px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-component{
+    margin-top: 17px;
+}
+
+.cover-main{
+    margin-top: 0px !important;
+    height: 240px;
+    width: 159px;
+}
+
+.book-title{
+    font-family: 'Manrope';
+    font-size: 32px;
+}
+
+.nav-arrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+.line {
+    width: 100%;
+    height: 5px; /* Adjust thickness of the line */
+    background-color: var(--ghost-white-color); /* Adjust color of the line */
+    border-radius: 4px;
+
+}
+  
+/* .line:first-child {
+    /* transform: rotate(45deg) translateY(100%); */
+/* } */
+  
+.line:last-child {
+    transform: rotate(-45deg);
+}
+
+.scroll-bar{
+    display: flex;
+    align-items: center;
+}
+
+.order-dots{
+    display:flex;
+    justify-content: space-evenly;
+    width: 102px;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.dot{
+    border-radius: 50%;
+    background-color: var(--disabled-button-color);
+    height: 8px;
+    width: 8px;
+}
+
+.purchase-button {
+    width: 209px;
+    height:50px;
+    border-radius: 40px;
+}
+
+.book-info{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.book-reviews{
+    display:flex;
+    flex-direction: column;
+}
+/* END PAGE CONTENTS STYLING */
+
+
+/* FOOTER STYLING */
+.quick-links-footer{
+    width: 100%;
+    height: 345px;
+    background-color: var(--sea-green-color);
+    color: var(--ghost-white-color);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.quick-links-footer h3{
+    font-size: 32 !important;
+}
+
+.links{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-bottom:10px;
+    text-decoration: underline;
+}
+
+.link-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 46px;
+    margin-right: 46px;
+    flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+
+}
+
+.quick-links-footer #link{
+    color: var(--ghost-white-color);
+    font-family: 'Manrope';
+    font-size: 24px;
+    margin: 10px;
+}
+/* END FOOTER STYLING */
+
