@@ -18,7 +18,7 @@
         <!-- Site Header -->
         <div class="header"> 
             <button class="menu-button">
-                <svg class = "menu-button-svg"   fill="none" viewBox="0 0 20 16">
+                <svg class = "menu-button-svg" fill="none" viewBox="0 0 20 16">
                     <path class="menu-button-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" d="M2 2h16.6M2 8h16.6M2 14h16.6"/>
                 </svg>
             </button>
@@ -38,20 +38,16 @@
         <div class="page-contents">
             <!-- Page Title -->
             <h2 class="page-title">Works</h2>
-            
-            <!-- <div class="series-dropdown">
-                <select>
-                    <option value="0" class="series-dropdown-item">The Hunger Games</option>
-                    <option value="1" class="series-dropdown-item">The Underland Chronicles</option>
-                    <option value="2" class="series-dropdown-item">Picture Books</option>
-                </select>
-            </div> -->
 
             <div class="series-dropdown">
-                <button class="series-dropdown-button"> series:</button>
-                <a value="0" class="series-dropdown-item">The Hunger Games</a>
-                <a value="1" class="series-dropdown-item">The Underland Chronicles</a>
-                <a value="2" class="series-dropdown-item">Picture Books</a>
+                <button class="series-dropdown-button">series
+                    <svg class="dropdown-icon-svg" width="12" height="8" fill="none" viewBox="0 0 12 8">
+                        <path class="dropdown-icon" fill-rule="evenodd" 
+                            d="M11.056 2.794c.399-.38.502-1.078.23-1.56-.273-.483-.817-.566-1.217-.186L6.056 4.865 2.242.717C1.87.31 1.324.359 1.022.824c-.3.465-.242 1.17.131 1.576l4.12 4.482.025.046c.138.244.345.386.568.417.3.081.617-.042.822-.358a.934.934 0 0 0 .05-.087l4.318-4.106Z" 
+                            clip-rule="evenodd"/>
+                    </svg>
+                </button>
+                <!-- dropdown elements would go here -->
             </div>
 
             <!-- Hunger Games Section -->
@@ -76,20 +72,19 @@
                         
                         <div class="scroll-bar carousel-component">
                             <button class="nav-arrow-button nav-arrow-left blue-button">
-                                <svg width="13" height="21" fill="none" viewBox="0 0 13 21">
-                                    <path stroke="#F7F7FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.75" d="m2 2 9 8.5L2 19"/>
+                                <svg class="arrow-svg" fill="none" viewBox="0 0 12 17">
+                                    <path fill="#F7F7FF" fill-rule="evenodd" d="M4.378.725C3.701.04 2.461-.14 1.61.323.757.785.616 1.716 1.293 2.4L7.08 8.255.786 13.822c-.722.639-.64 1.571.183 2.084.823.512 2.076.41 2.797-.229l6.84-6.05c.046-.021.09-.043.134-.067.45-.244.7-.617.74-1.016.126-.502-.094-1.029-.641-1.37a1.945 1.945 0 0 0-.187-.102L4.378.725Z" clip-rule="evenodd"/>
                                 </svg>
                             </button>
 
                             <div class="order-dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
+                                <div class="dot dot1" id="HG-dot-1"></div>
+                                <div class="dot dot2" id="HG-dot-2"></div>
+                                <div class="dot dot3" id="HG-dot-3"></div>
                             </div>
                             <button class="nav-arrow-button nav-arrow-right blue-button">
-                                <svg width="13" height="21" fill="none" viewBox="0 0 13 21">
-                                    <path stroke="#F7F7FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.75" d="m2 2 9 8.5L2 19"/>
+                                <svg class="arrow-svg" fill="none" viewBox="0 0 12 17">
+                                    <path fill="#F7F7FF" fill-rule="evenodd" d="M4.378.725C3.701.04 2.461-.14 1.61.323.757.785.616 1.716 1.293 2.4L7.08 8.255.786 13.822c-.722.639-.64 1.571.183 2.084.823.512 2.076.41 2.797-.229l6.84-6.05c.046-.021.09-.043.134-.067.45-.244.7-.617.74-1.016.126-.502-.094-1.029-.641-1.37a1.945 1.945 0 0 0-.187-.102L4.378.725Z" clip-rule="evenodd"/>
                                 </svg>
                             </button>
                         </div>
@@ -116,7 +111,12 @@
                         <p class="book-reviews">
                             <text class="review">
                                 “...a superb tale of physical adventure, political suspense, and romance."
-                                --Booklist, STARRED REVIEW
+                                <i>--Booklist, STARRED REVIEW</i>
+                            </text>
+                            <text class="review">
+                                "...brilliantly plotted and perfectly paced...a futuristic novel every bit
+                                 as good and as allegorically rich as Scott Westerfeld's 'Uglies' books."
+                                <i>--The New York Times, John Green</i>
                             </text>
                         </p>
                     </div>
@@ -134,7 +134,11 @@
                     <div class="series-carousel">
                         
                         <div class="book-carousel carousel-component">
-                            <img class="cover-main" src="./assets/Gregor-the-Overlander-book-1.jpg">
+                            <img class="cover-prev-prev" src="static/Book_Cover_Large.png"/>
+                            <img class="cover-prev" src="static/Book_Cover_Large.png"/>
+                            <img class="cover-main" src="assets/Gregor-the-Overlander-book-1.jpg">
+                            <img class="cover-next" src="assets/Gregor-and-the-Prophecy-of-Bane.webp"/>
+                            <img class="cover-next-next" src="assets/Gregor-and-the-Curse-of-the_Warmbloods.jpg"/>
                         </div>
 
                         <p class="book-title book-title-container carousel-component">Gregor the Overlander</p>
@@ -142,19 +146,20 @@
                         
                         <div class="scroll-bar carousel-component">
                             <button class="nav-arrow-button nav-arrow-left blue-button">
-                                <svg width="13" height="21" fill="none" viewBox="0 0 13 21">
-                                    <path stroke="#F7F7FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.75" d="m2 2 9 8.5L2 19"/>
+                                <svg class="arrow-svg" fill="none" viewBox="0 0 12 17">
+                                    <path fill="#F7F7FF" fill-rule="evenodd" d="M4.378.725C3.701.04 2.461-.14 1.61.323.757.785.616 1.716 1.293 2.4L7.08 8.255.786 13.822c-.722.639-.64 1.571.183 2.084.823.512 2.076.41 2.797-.229l6.84-6.05c.046-.021.09-.043.134-.067.45-.244.7-.617.74-1.016.126-.502-.094-1.029-.641-1.37a1.945 1.945 0 0 0-.187-.102L4.378.725Z" clip-rule="evenodd"/>
                                 </svg>
                             </button>
                             <div class="order-dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
+                                <div class="dot dot1"></div>
+                                <div class="dot dot2"></div>
+                                <div class="dot dot3"></div>
+                                <div class="dot dot4"></div>
+                                <div class="dot dot5"></div>
                             </div>
                             <button class="nav-arrow-button nav-arrow-right blue-button">
-                                <svg width="13" height="21" fill="none" viewBox="0 0 13 21">
-                                    <path stroke="#F7F7FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.75" d="m2 2 9 8.5L2 19"/>
+                                <svg class="arrow-svg" fill="none" viewBox="0 0 12 17">
+                                    <path fill="#F7F7FF" fill-rule="evenodd" d="M4.378.725C3.701.04 2.461-.14 1.61.323.757.785.616 1.716 1.293 2.4L7.08 8.255.786 13.822c-.722.639-.64 1.571.183 2.084.823.512 2.076.41 2.797-.229l6.84-6.05c.046-.021.09-.043.134-.067.45-.244.7-.617.74-1.016.126-.502-.094-1.029-.641-1.37a1.945 1.945 0 0 0-.187-.102L4.378.725Z" clip-rule="evenodd"/>
                                 </svg>
                             </button>                 </div>
 
@@ -177,8 +182,8 @@
                         
                         <p class="book-reviews">
                             <text class="review">
-                                “...readers will likely find [the Underland] to be a fantastically engaging place.”\
-                                --Publishers Weekly, STARRED REVIEW
+                                “...readers will likely find [the Underland] to be a fantastically engaging place.”
+                                <i>-Publishers Weekly, STARRED REVIEW</i>
                             </text>
                         </p>
                     </div>
@@ -194,28 +199,27 @@
                 <div class="series-section-body" id="Picture Books Body">
                         
                     <div class="series-carousel">
-                        
                         <div class="book-carousel carousel-component">
-                            <img class="cover-main" src="./assets/Year-of-the-Jungle-Picture-Book.jpg">
+                            <img class="cover-prev" src="static/Book_Cover_Large.png"/>
+                            <img class="cover-main" src="assets/Year-of-the-Jungle-Picture-Book.jpg">
+                            <img class="cover-next" src="assets/When-Charlie-McButton-Lost-Power.jpg"/>
                         </div>
 
                         <p class="book-title book-title-container carousel-component">Year of the Jungle</p>
 
                         <div class="scroll-bar carousel-component">
                             <button class="nav-arrow-button nav-arrow-left blue-button">
-                                <svg width="13" height="21" fill="none" viewBox="0 0 13 21">
-                                    <path stroke="#F7F7FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.75" d="m2 2 9 8.5L2 19"/>
+                                <svg class="arrow-svg" fill="none" viewBox="0 0 12 17">
+                                    <path fill="#F7F7FF" fill-rule="evenodd" d="M4.378.725C3.701.04 2.461-.14 1.61.323.757.785.616 1.716 1.293 2.4L7.08 8.255.786 13.822c-.722.639-.64 1.571.183 2.084.823.512 2.076.41 2.797-.229l6.84-6.05c.046-.021.09-.043.134-.067.45-.244.7-.617.74-1.016.126-.502-.094-1.029-.641-1.37a1.945 1.945 0 0 0-.187-.102L4.378.725Z" clip-rule="evenodd"/>
                                 </svg>
                             </button>
                             <div class="order-dots">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
+                                <div class="dot dot1"></div>
+                                <div class="dot dot2"></div>
                             </div>
                             <button class="nav-arrow-button nav-arrow-right blue-button">
-                                <svg width="13" height="21" fill="none" viewBox="0 0 13 21">
-                                    <path stroke="#F7F7FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.75" d="m2 2 9 8.5L2 19"/>
+                                <svg class="arrow-svg" fill="none" viewBox="0 0 12 17">
+                                    <path fill="#F7F7FF" fill-rule="evenodd" d="M4.378.725C3.701.04 2.461-.14 1.61.323.757.785.616 1.716 1.293 2.4L7.08 8.255.786 13.822c-.722.639-.64 1.571.183 2.084.823.512 2.076.41 2.797-.229l6.84-6.05c.046-.021.09-.043.134-.067.45-.244.7-.617.74-1.016.126-.502-.094-1.029-.641-1.37a1.945 1.945 0 0 0-.187-.102L4.378.725Z" clip-rule="evenodd"/>
                                 </svg>
                             </button>             </div>
 
@@ -237,7 +241,7 @@
                         <p class="book-reviews">
                             <text class="review">
                                 "Important and necessary."
-                                --Kirkus Reviews, STARRED REVIEW
+                                <i>--Kirkus Reviews, STARRED REVIEW</i>
                             </text>
                         </p>
                     </div>
